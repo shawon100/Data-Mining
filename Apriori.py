@@ -1,7 +1,7 @@
 from itertools import combinations
 items = [['A', 'C', 'D'], ['B', 'C', 'E'], ['A', 'B', 'C', 'E'], ['B', 'E']]
 s = []
-def apropri(lname, paramater):
+def apriori(lname, paramater):
     second = list(combinations(lname, paramater))
     # print(second)
 
@@ -64,10 +64,10 @@ nitem = []
 for k in new_dict:
     nitem.append(k)
 
-support2=apropri(nitem,2)
+support2=apriori(nitem,2)
 print(support2)
 # third
-support3 = apropri(nitem,3)
+support3 = apriori(nitem,3)
 print(support3)
 
 
